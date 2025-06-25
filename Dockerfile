@@ -5,7 +5,7 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /app
 
 # Copy everything and build the app
-COPY ../src/main/java .
+COPY src/main/java .
 
 # Build the project using Maven Wrapper
 RUN ./mvnw clean package -DskipTests
